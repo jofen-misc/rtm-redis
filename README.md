@@ -1,6 +1,6 @@
 # rtm-redis
 
-An real-time messaging system that uses the new Redis Streams and Redis Graph.
+A real-time messaging system that uses Redis Streams for chatting and Redis Graph to build the social graph.
 
 ## Requirements
 
@@ -12,20 +12,14 @@ Docker and Docker Compose installed.
 
     docker-compose up -d
 
-After the containers have been built, the example can be accessed on port `3000`.
+After the containers have been built, the example can be accessed by navigating to http://localhost:3000/
 
 **Remove containers**
 
     docker-compose rm -f
 
-**Start Angular debugging**
+### Postman Collection
+[Check it here](postman_collection.json)
 
-    cd ./app/client
-    npm install
-    npm run start
-
-**Start API server**
-
-    cd ./app/api
-    npm install
-    REDIS=[ip] node src/index.js
+### Screen shot
+![The Chat App](ScreenShot.png)
