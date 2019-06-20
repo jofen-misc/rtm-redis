@@ -13,6 +13,7 @@
     "express": "^4.16.3",
     "ioredis": "^3.2.2",
     "rxjs": "^5.5.8",
-    "socket.io": "^2.1.0"
+    "socket.io": "^2.1.0",
+    "redisgraph.js": "^1.1.3"
   }
 }

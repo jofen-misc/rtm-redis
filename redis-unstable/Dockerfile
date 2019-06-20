@@ -46,6 +46,7 @@ VOLUME /data
 WORKDIR /data
 
 COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod 777  /usr/local/bin/docker-entrypoint.sh
 ENTRYPOINT ["docker-entrypoint.sh"]
 
 EXPOSE 6379

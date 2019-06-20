@@ -6,9 +6,8 @@ services:
     ports:
      - 3000:3000
  redis:
-    image: redis-unstable
-    build: ./redis-unstable
+    image: redislabs/redisgraph
     ports: 
-     - 6379
+     - 6379:6379
     labels:
      - redis

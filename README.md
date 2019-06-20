@@ -28,4 +28,14 @@ After the containers have been built, the example can be accessed on port `3000`
 
     cd ./app/api
     npm install
+    REDIS=[ip] node src/index.jsr debugging**
+
+    cd ./app/client
+    npm install
+    npm run start
+
+**Start API server**
+
+    cd ./app/api
+    npm install
     REDIS=[ip] node src/index.js
